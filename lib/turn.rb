@@ -42,6 +42,9 @@ def turn(board)
   #   show the board
   display_board(board)
   # else
+else 
+  turn(board)
   #   ask for input again until you get a valid input
   # end
+end
 end
