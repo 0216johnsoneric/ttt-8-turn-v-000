@@ -5,7 +5,7 @@ require_relative '../lib/turn.rb'
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Please enter 1-9:"
-input = gets.strip
+turn = gets.strip
 index = input_to_index(input)
 
 move(board, index)
