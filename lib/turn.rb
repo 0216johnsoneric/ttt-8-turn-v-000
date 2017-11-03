@@ -29,13 +29,18 @@ def position_taken?(board, index)
 end
 
 def turn(board)
-  ask for input
-get input
-convert input to index
-if index is valid
-  make the move for index
-  show the board
-else
-  ask for input again until you get a valid input
-end
+  # ask for input
+  puts "Please enter 1-9:"
+  # get input
+  input = gets.strip
+  # convert input to index
+  index = input_to_index(input)
+  # if index is valid
+  if valid_move?(board, index) 
+  #   make the move for index
+  move(board, index)
+  #   show the board
+  # else
+  #   ask for input again until you get a valid input
+  # end
 end
