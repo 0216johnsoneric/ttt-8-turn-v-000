@@ -14,12 +14,19 @@ def move(board, index, token = "X" )
   board[index] = token
 end
 
-def valid_move?(board, index)
-  # if index.between?(1,9)
-  #   if !position_taken?(board, index)
-  #     true
-  #   end
-  # end
+def valid_move?(board,index)
+  if position_taken?(board,index) == false
+  return true
+  else
+  return false
+  end
+end
 
-  index.between?(0,8) && !position_taken?(board, index)
+# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+def position_taken?(board,index)
+  if board[index] == " "
+  return false
+  else
+  return true
+  end
 end
