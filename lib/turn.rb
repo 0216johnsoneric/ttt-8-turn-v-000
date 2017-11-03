@@ -37,13 +37,13 @@ def turn(board)
   index = input_to_index(input)
   # if index is valid
   if valid_move?(board, index)
-  #   make the move for index
-  move(board, index)
-  #   show the board
-  display_board(board)
-  # else
+    #   make the move for index
+    move(board, index)
+    #   show the board
+    display_board(board)
+    # else
   else
     turn(board)
-  
+  #   ask for input again until you get a valid input
   end
 end
